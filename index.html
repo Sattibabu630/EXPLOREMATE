@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExploreMate - Travel Discovery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">🌍 ExploreMate</div>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Explore India Your Way</h1>
+
+            <p>
+                Discover famous places, local food,
+                hidden gems and exciting things to do.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search Manali, Goa, Jaipur..."
+                >
+
+                <button onclick="searchPlace()">
+                    🔍 Search
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESTINATIONS -->
+    <section id="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <p class="subtitle">
+            Choose a destination and start exploring
+        </p>
+
+        <div class="destination-container">
+
+
+            <!-- MANALI -->
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?auto=format&fit=crop&w=800&q=80"
+                    alt="Manali"
+                >
+
+                <div class="card-content">
+
+                    <h3>🏔️ Manali</h3>
+
+                    <p>
+                        Mountains, snow, adventure
+                        and beautiful valleys.
+                    </p>
+
+                    <button onclick="showPlace('manali')">
+                        Explore Manali
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- GOA -->
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80"
+                    alt="Goa"
+                >
+
+                <div class="card-content">
+
+                    <h3>🏖️ Goa</h3>
+
+                    <p>
+                        Beautiful beaches, seafood
+                        and relaxing holidays.
+                    </p>
+
+                    <button onclick="showPlace('goa')">
+                        Explore Goa
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- JAIPUR -->
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80"
+                    alt="Jaipur"
+                >
+
+                <div class="card-content">
+
+                    <h3>🏰 Jaipur</h3>
+
+                    <p>
+                        Royal palaces, forts,
+                        culture and shopping.
+                    </p>
+
+                    <button onclick="showPlace('jaipur')">
+                        Explore Jaipur
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- KERALA -->
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80"
+                    alt="Kerala"
+                >
+
+                <div class="card-content">
+
+                    <h3>🌴 Kerala</h3>
+
+                    <p>
+                        Backwaters, greenery,
+                        beaches and nature.
+                    </p>
+
+                    <button onclick="showPlace('kerala')">
+                        Explore Kerala
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- HYDERABAD -->
+            <div class="destination-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=80"
+                    alt="Hyderabad"
+                >
+
+                <div class="card-content">
+
+                    <h3>🏛️ Hyderabad</h3>
+
+                    <p>
+                        History, monuments and
+                        delicious local food.
+                    </p>
+
+                    <button onclick="showPlace('hyderabad')">
+                        Explore Hyderabad
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESTINATION RESULT -->
+    <section id="result">
+
+        <div id="placeDetails"></div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>About ExploreMate</h2>
+
+        <p>
+            ExploreMate is a travel discovery website designed
+            to help people find interesting destinations in India.
+            Users can discover famous attractions, local food,
+            hidden gems, activities, photos and the best time to visit.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 ExploreMate |
+            Travel Discovery Website
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
